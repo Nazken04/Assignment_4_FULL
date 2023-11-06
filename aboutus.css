@@ -1,0 +1,99 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#title {
+    background-color: #fb92ba;
+    color: #000;
+}
+
+.container-fluid {
+    background-color: #fb92ba;
+    padding: 1% 9%;
+}
+
+footer {
+    background-color: #fb92ba;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar {
+    padding: 4rem 4rem 4rem 4rem;
+}
+
+.nav-item {
+    padding: 0 15px;
+    font-weight: lighter;
+    font-size: 1.2rem;
+}
+
+.nav-link {
+    font-size: 1.7rem;
+}
+
+.card-img-container {
+    height: 400px;
+    overflow: hidden;
+}
+
+.card-img-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.audio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-custom-primary {
+    background-color: #1A7F53;
+    color: #fff;
+}
+
+
+#game-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    width: 80%;
+}
+
+#ingredients-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.ingredient {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#box {
+    border: 2px dashed #333;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#message {
+    margin: 20px;
+}
