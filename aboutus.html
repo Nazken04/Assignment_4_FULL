@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/3040/3040052.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css\aboutus.css">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/aa4e7733af.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <section id="title">
+        <div class="container-fluid">
+            <!-- Navigation bar -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand text-white" href="main.html"><i class="fa-regular fa-bookmark"></i><span
+                        class="ml-2">Recipe Book</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link text-white" href="main.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="breakfast.html">Breakfast</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="lunch.html">Lunch</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="dinner.html">Dinner</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="aboutus.html">About us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- Jumbotron -->
+        <div class="jumbotron text-center bg-transparent text-white mt-0 py-4">
+            <h1>Meet our chefs</h1>
+        </div>
+    </section>
+    <div class="container mt-4 text-center"> 
+        <h2>These geniuses generously share their culinary recipes based on many years of experience.</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="media/alisa.png" class="card-img-top" alt="Creator 1">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Alisa Styles</h5>
+                        <p class="card-text">Founder of the "Recipe Book" project</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="media/louis.jpg" class="card-img-top" alt="Creator 2">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Louis Tomlinson</h5>
+                        <p class="card-text">Chief in the "La Cardinal," content creator.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="media/joanne.jpg" class="card-img-top" alt="Creator 3">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Joanne Chang</h5>
+                        <p class="card-text">Professional baker, content creator.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="mt-4" style="text-align: center;">Do you want to become one of the site moderator? Try to win this
+            game!</h1>
+        <div id="game-container" class="mt-4">
+            <div id="ingredients-container">
+                <div class="ingredient" id="bread-flour">Bread Flour</div>
+                <div class="ingredient" id="eggs">Eggs</div>
+                <div class="ingredient" id="instant-yeast">Instant Yeast</div>
+                <div class="ingredient" id="juice">Juice</div>
+                <div class="ingredient" id="baking-powder">Baking Powder</div>
+                <div class="ingredient" id="sugar">Sugar</div>
+                <div class="ingredient" id="cheese">Cheese</div>
+                <div class="ingredient" id="salt">Salt</div>
+                <div class="ingredient" id="water">Water</div>
+                <div class="ingredient" id="chicken">Chicken</div>
+            </div>
+            <div id="box" class="mt-3">
+                <div id="drop-here" style="text-align: center;">Drop the right ingredients here</div>
+            </div>
+        </div>
+        <div class="alert alert-success mt-3" id="success-message" style="display: none">
+            Good job, we will contact you in 10 business days!
+        </div>
+        <div class="alert alert-danger mt-3" id="error-message" style="display: none">
+            Oops! Try again!
+        </div>
+    </div>
+    <div class="container">
+        <div class="audio-container mt-2 mb-2">
+            <h2 style="text-align: center;">We recommend this song as background music for playing the game and cooking!
+            </h2>
+            <h4>Song: Retro Funk Energetic Music</h4>
+            <audio id="audio" src="media/retro-funk-energetic-background-music-136122 (1).mp3"></audio>
+            <button id="playButton" class="btn btn-custom-primary">Play Sound</button>
+        </div>
+    </div>
+
+    <!-- JavaScript Script -->
+    <script src="scripts/script.js"></script>
+
+    <footer class="mt-3">
+        <p>&copy; 2023 Recipe Book</p>
+    </footer>
+</body>
