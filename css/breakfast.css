@@ -1,0 +1,106 @@
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#title {
+  background-color: #fb92ba;
+  color: #000;
+}
+
+.container-fluid {
+  background-color: #fb92ba;
+  padding: 1% 9%;
+}
+
+footer {
+  background-color: #fb92ba;
+  color: white;
+  padding: 10px 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.navbar {
+  padding: 4rem 4rem 4rem 4rem;
+}
+
+.nav-item {
+  padding: 0 15px;
+  font-weight: lighter;
+  font-size: 1.2rem;
+}
+
+.nav-link {
+  font-size: 1.7rem;
+}
+
+#recipeCarousel {
+  margin-top: 20px;
+}
+
+#recipeCarousel {
+  margin-bottom: 20px;
+}
+
+.completed {
+  text-decoration: line-through;
+  background-color: #dff0d8;
+}
+
+.btn-custom-primary {
+  background-color: #1A7F53;
+  color: #fff;
+}
+
+.btn-custom-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.container {
+  text-align: center;
+}
+
+.clickable-gif {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.gif-container {
+  max-width: 200px;
+  transition: transform 0.5s;
+}
+
+.gif-container img {
+  width: 100%;
+}
+
+.promo-code {
+  position: absolute;
+  top: 40%;
+  left: 100%;
+  background-color: #fb92ba;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  transition: left 0.5s;
+}
+
+.clickable-gif.show-promo-code .promo-code {
+  left: 0;
+}
+
+.clickable-gif.show-promo-code .gif-container {
+  transform: translateX(-100%);
+}
